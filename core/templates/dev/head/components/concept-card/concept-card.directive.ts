@@ -35,9 +35,8 @@ angular.module('oppia').directive('conceptCard', [
       controller: [
         '$scope', '$filter', '$rootScope',
         'ConceptCardBackendApiService', 'ConceptCardObjectFactory',
-        function(
-            $scope, $filter, $rootScope,
-            ConceptCardBackendApiService, ConceptCardObjectFactory) {
+        function($scope, $filter, $rootScope, ConceptCardBackendApiService,
+            ConceptCardObjectFactory) {
           var ctrl = this;
           ctrl.conceptCards = [];
           var currentConceptCard = null;
